@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,8 +28,8 @@
             <div class="cursor-pointer hover:bg-grey-500 p-2">Terbaru</div>
         </div>
     </div>
-    <!--daftar artikel-->
     </div>
+    <!--daftar artikel-->
     <div class="grid grid-cols-3 divide-x gap-4 border-2 border-black mt-4">
         <div class="relative">
             <img class="h-44 w-full" src="{{ asset('storage\img.jpg') }}" alt=""/>

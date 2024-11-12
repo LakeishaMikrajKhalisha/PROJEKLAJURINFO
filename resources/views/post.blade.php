@@ -75,7 +75,7 @@
                 </div>
                 <form>
                 <div>
-                <p class="font-normal text-sm text-black mt-1 ml-7">Lorem ipsum dolor sit!</p>
+                <p class="font-normal text-sm text-fontDefault mt-1 ml-7">Lorem ipsum dolor sit!</p>
                 <input type="button" class="border border-white text-white bg-BlueAccent shadow-md hover:bg-slate-400 hover:border-slate-800 w-16 text-sm font-semibold text-center p-1 mr-4 mb-2 mt-1 ml-7" value="Balas"/></div>
                 </form>
             </div>
@@ -92,7 +92,7 @@
                 </div>
                 <form>
                 <div>
-                <p class="font-normal text-sm text-black mt-1 ml-7">Lorem ipsum dolor sit!</p>
+                <p class="font-normal text-sm font-Default mt-1 ml-7">Lorem ipsum dolor sit!</p>
                 <input type="button" class="border border-white text-white bg-BlueAccent shadow-md hover:bg-slate-400 hover:border-slate-800 w-16 text-sm font-semibold text-center p-1 mr-4 mb-2 mt-1 ml-7" value="Balas"/></div>
                 </form>
             </div>
@@ -101,14 +101,14 @@
             <div class="absolute right-0 top-0 mt-2">
                 <div class="w-80 max-w-sm p-4 bg-white border border-grey shadow sm:p-8">
                     <div class="flex items-center justify-between mb-2">
-                        <h5 class="text-xl font-bold leading-none text-gray-900">Rekomendasi Artikel</h5>
+                        <h5 class="text-xl font-bold leading-none text-fontDefault">Rekomendasi Artikel</h5>
                    </div>
                    <div class="flow-root">
                         <ul role="list" class="divide-y divide-grey">
                             <li class="py-3 sm:py-4 my-0">
                                 <div class="flex items-center">
                                     <div class="flex-1 min-w-0">
-                                        <a href="" class="text-sm font-medium text-gray-900 hover:text-link hover:underline hover:underline-offset-1">
+                                        <a href="" class="text-sm font-medium text-fontDefault hover:text-link hover:underline hover:underline-offset-1">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore, repellendus culpa minus
                                         </a>
                                     </div>
@@ -117,7 +117,7 @@
                             <li class="py-3 sm:py-4">
                             <div class="flex items-center">
                                 <div class="flex-1 min-w-0">
-                                    <a href="" class="text-sm font-medium text-gray-900  hover:text-link hover:underline hover:underline-offset-1">
+                                    <a href="" class="text-sm font-medium text-fontDefault hover:text-link hover:underline hover:underline-offset-1">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore, repellendus culpa minus
                                     </a>
                                 </div>
@@ -126,7 +126,7 @@
                             <li class="py-3 sm:py-4">
                                 <div class="flex items-center">
                                     <div class="flex-1 min-w-0">
-                                        <a href="" class="text-sm font-medium text-gray-900  hover:text-link hover:underline hover:underline-offset-1">
+                                        <a href="" class="text-sm font-medium text-fontDefault hover:text-link hover:underline hover:underline-offset-1">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore, repellendus culpa minus
                                         </a>
                                     </div>
@@ -135,7 +135,7 @@
                                 <li class="py-3 sm:py-4">
                                     <div class="flex items-center">
                                         <div class="flex-1 min-w-0">
-                                            <a href="" class="text-sm font-medium text-gray-900  hover:text-link hover:underline hover:underline-offset-1">
+                                            <a href="" class="text-sm font-medium text-fontDefault  hover:text-link hover:underline hover:underline-offset-1">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore, repellendus culpa minus
                                             </a>
                                         </div>
@@ -144,7 +144,7 @@
                                     <li class="py-3 sm:py-4">
                                         <div class="flex items-center">
                                             <div class="flex-1 min-w-0">
-                                                <a href="" class="text-sm font-medium text-gray-900  hover:text-link hover:underline hover:underline-offset-1">
+                                                <a href="" class="text-sm font-medium text-fontDefault hover:text-link hover:underline hover:underline-offset-1">
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore, repellendus culpa minus
                                                 </a>
                                             </div>

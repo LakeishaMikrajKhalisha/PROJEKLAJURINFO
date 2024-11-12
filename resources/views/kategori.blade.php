@@ -18,13 +18,13 @@
                     <img src="">
                 </div>
                 <div class="float-right">
-                <div class="flex items-center ml-2 text-sm font-normal text-black border-black">
+                <div class="flex items-center ml-2 text-sm font-normal text-fontDefault border-fontDefault">
                 <div class="">
                     <a href="" class="hover:text-blue-600">Kecantikan</a></div>
                 <div class="ml-1">
                     <p>| 06 Desember 2023</p></div>
                 </div>
-                <div class="text-black font-medium text-2xl ml-2 mt-0">Lorem ipsum dolor sit amet lalali lulu consectetur adipisicing elit!</div>
+                <div class="text-fontDefault font-medium text-2xl ml-2 mt-0">Lorem ipsum dolor sit amet lalali lulu consectetur adipisicing elit!</div>
                 </div>
             </div>
             </div>
@@ -35,13 +35,13 @@
                         <img src="">
                     </div>
                     <div class="float-right">
-                    <div class="flex items-center ml-2 text-sm font-normal text-black border-black">
+                    <div class="flex items-center ml-2 text-sm font-normal text-fontDefault border-fontDefault">
                     <div class="">
                         <a href="" class="hover:text-blue-600">Kecantikan</a></div>
                     <div class="ml-1">
                         <p>| 06 Desember 2023</p></div>
                     </div>
-                    <div class="text-black font-medium text-2xl ml-2 mt-0">Lorem ipsum dolor sit amet lalali lulu consectetur adipisicing elit!</div>
+                    <div class=" text-fontDefault font-medium text-2xl ml-2 mt-0">Lorem ipsum dolor sit amet lalali lulu consectetur adipisicing elit!</div>
                     </div>
                 </div>
             </div>
@@ -54,13 +54,13 @@
                     <img src="">
                 </div>
                 <div class="float-right">
-                <div class="flex items-center ml-2 text-sm font-normal text-black border-black">
+                <div class="flex items-center ml-2 text-sm font-normal  text-fontDefault border-fontDefault">
                 <div class="">
                     <a href="" class="hover:text-blue-600">Kecantikan</a></div>
                 <div class="ml-1">
                     <p>| 06 Desember 2023</p></div>
                 </div>
-                <div class="text-black font-medium text-2xl ml-2 mt-0">Lorem ipsum dolor sit amet lalali lulu consectetur adipisicing elit!</div>
+                <div class=" text-fontDefault font-medium text-2xl ml-2 mt-0">Lorem ipsum dolor sit amet lalali lulu consectetur adipisicing elit!</div>
                 </div>
             </div>
             </div>
@@ -71,13 +71,13 @@
                         <img src="">
                     </div>
                     <div class="float-right">
-                    <div class="flex items-center ml-2 text-sm font-normal text-black border-black">
+                    <div class="flex items-center ml-2 text-sm font-normal text-fontDefault border-fontDefault">
                     <div class="">
                         <a href="" class="hover:text-blue-600">Kecantikan</a></div>
                     <div class="ml-1">
                         <p>| 06 Desember 2023</p></div>
                     </div>
-                    <div class="text-black font-medium text-2xl ml-2 mt-0">Lorem ipsum dolor sit amet lalali lulu consectetur adipisicing elit!</div>
+                    <div class=" text-fontDefault font-medium text-2xl ml-2 mt-0">Lorem ipsum dolor sit amet lalali lulu consectetur adipisicing elit!</div>
                     </div>
                 </div>
             </div>
@@ -90,13 +90,13 @@
                     <img src="">
                 </div>
                 <div class="float-right">
-                <div class="flex items-center ml-2 text-sm font-normal text-black border-black">
+                <div class="flex items-center ml-2 text-sm font-normal text-fontDefault">
                 <div class="">
                     <a href="" class="hover:text-blue-600">Kecantikan</a></div>
                 <div class="ml-1">
                     <p>| 06 Desember 2023</p></div>
                 </div>
-                <div class="text-black font-medium text-2xl ml-2 mt-0">Lorem ipsum dolor sit amet lalali lulu consectetur adipisicing elit!</div>
+                <div class="text-fontDefault font-medium text-2xl ml-2 mt-0">Lorem ipsum dolor sit amet lalali lulu consectetur adipisicing elit!</div>
                 </div>
             </div>
             </div>
@@ -107,13 +107,13 @@
                         <img src="">
                     </div>
                     <div class="float-right">
-                    <div class="flex items-center ml-2 text-sm font-normal text-black border-black">
+                    <div class="flex items-center ml-2 text-sm font-normal text-fontDefault border-fontDefault">
                     <div class="">
                         <a href="" class="hover:text-blue-600">Kecantikan</a></div>
                     <div class="ml-1">
                         <p>| 06 Desember 2023</p></div>
                     </div>
-                    <div class="text-black font-medium text-2xl ml-2 mt-0">Lorem ipsum dolor sit amet lalali lulu consectetur adipisicing elit!</div>
+                    <div class="text-fontDefaultfont-medium text-2xl ml-2 mt-0">Lorem ipsum dolor sit amet lalali lulu consectetur adipisicing elit!</div>
                     </div>
                 </div>
             </div>
