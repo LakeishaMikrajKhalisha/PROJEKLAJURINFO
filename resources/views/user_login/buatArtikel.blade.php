@@ -17,9 +17,8 @@
 </head>
 <body>
 <div class="mx-40">
-<form action="{{ url('artikel/'.$articles->id.'/update') }}" method="POST" id="artikelSaya">
+<form action="{{ url('/buat-artikel') }}" method="POST" id="artikelSaya">
   @csrf
-  @method('PATCH')
 <div class="relative my-4 pb-2">
     <nav class="bg-white border-gray-200">
         <div class="max-w-screen-xl flex flex-wrap mx-auto items-center justify-between h-10">
@@ -72,18 +71,17 @@
         </div>
       </nav>
 </div>
-<p class="text-3xl font-bold border-t border-grey leading-none text-fontDefault text-center py-4">Edit Artikel</p>
+<p class="text-3xl font-bold border-t border-grey leading-none text-fontDefault text-center py-4">Buat Artikel</p>
 <div class="mt-2">
     <label for="judulArtikel" class="block text-xl font-medium text-fontDefault">Judul Artikel</label>
     <div class="relative mt-2 rounded-md shadow-sm">
-      <input type="text" name="judulArtikel" id="judulArtikel" class="block w-full border-0 py-1.5 pl-4 pr-20 text-fontDefault text-2xl ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-60 font-bold placeholder:text-sm" value="{{ $articles->judulArtikel }}"/>   
+      <input type="text" name="judulArtikel" id="judulArtikel" class="block w-full border-0 py-1.5 pl-4 pr-20 text-fontDefault text-2xl ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-60 font-bold placeholder:text-sm"/>   
     </div>
 </div>
 <div class="mt-2">
 <label for="isiArtikel" class="block text-xl font-medium text-fontDefault">Tulis Artikel</label>
 <div class="relative mt-2 rounded-md shadow-sm">
 <textarea type="longtext" name="isiArtikel" id="isiArtikel"  class="h-60 w-full block border-0 pt-2 pl-4 pr-20 text-fontDefault text-base ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-60 font-bold placeholder:text-sm resize-none overflow-hidden mb-10">
-    {{ $articles->isiArtikel }}
 </textarea>
 </div>
 </div>

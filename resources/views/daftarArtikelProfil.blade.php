@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('mainHeader')
+@include('headerProfil')
 <body>
     <div class="mx-40 my-4">
-    <div class="container mx-auto relative">
-            <div class="border ml-2 mt-6 max-w-32 text-center border-BlueAccent shadow-md">
-                <p class="text-fontDefault font-medium flex mx-auto items-center justify-center text-lg">Kecantikan</p></div>
+        <div class="flex items-center justify-center mb-2 m-4">
+            <h5 class="text-2xl font-bold leading-none text-fontDefault mb-2">Daftar Artikel</h5>
+       </div>
+        <div class="container mx-auto relative border-t border-gray">
             <div class="mt-10 grid grid-cols-2 gap-4 my-2">
                 @foreach ($artikel as $judul)
             <div class="container max-w-xl max-h-full p-2">
@@ -17,7 +18,7 @@
                     <p class="ml-1 text-grey">| {{($judul->created_at)}}</p>
                 </div>
                 <div class="ml-2">
-                <a href="{{ url('artikel/'.$judul->id)}}" class="hover:underline  hover:text-link hover:underline-offset-1 text-xl font-semibold"> {{ $judul->judulArtikel }}</a>
+                <a href="{{ url('artikel/'.$judul->id) }}" class="hover:underline  hover:text-link hover:underline-offset-1 text-xl font-semibold"> {{ $judul->judulArtikel }}</a>
                 </div>
                 </div>
             </div>
@@ -27,7 +28,7 @@
             <div class="mt-10">
                 {{$artikel->links()}}
             </div>
-    </div> 
+    </div>
     </div>
 </body>
-</html> 
+</html>

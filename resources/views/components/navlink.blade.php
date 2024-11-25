@@ -1,0 +1,2 @@
+<a {{ $attributes }}
+class="{{ request()->is('/') ? 'border-0 hover:bg-gray-50 hover:bg-opacity-20'}} my-2 text-center  text-base font-medium w-20" aria-current="{{ request()->is('/') ? 'page' : false }}">{{ $slot }}</a>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('header_profil')
+@include('headerProfil')
 <body>
-    <div class="relative mx-40 flex mt-4">
+    <div class="relative mx-40 flex mt-4 mb-10">
         <!--foto profil dan follow -->
         <div class="container w-40 flex flex-col items-center">
         <div class="bg-grey rounded-full h-32 w-32 m-4 flex items-center justify-center">
@@ -22,10 +22,9 @@
         <strong class="text-4xl mt-4 mb-6 text-fontDefault">Lorem ipsumdolor sitamet.</strong>
         <div class="mb-0 w-full h-full">
             <div class="py-2 px-4 bg-white mb-2 h-40 rounded-t-lg border border-grey">
-                <textarea class="px-0 w-full text-md text-fontDefault border-0 focus:ring-0 focus:outline-none disabled" placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem voluptatum dolorum officiis sunt voluptate, eveniet est aliquam ipsa tempora numquam odit consectetur inventore provident hic doloremque blanditiis pariatur" readonly></textarea>
+                <textarea class="resize-none overflow-hidden px-0 w-full text-md text-fontDefault border-0 focus:ring-0 focus:outline-none disabled" placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem voluptatum dolorum officiis sunt voluptate, eveniet est aliquam ipsa tempora numquam odit consectetur inventore provident hic doloremque blanditiis pariatur" readonly></textarea>
             </div>
         </div>
     </div>
       </div>
-    </div>
 </body>
