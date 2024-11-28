@@ -48,14 +48,14 @@ public function update(Request $request, $id){
             'judulArtikel'=>$request->judulArtikel,
             'isiArtikel'=>$request->isiArtikel
         ]);
-        return redirect()->route('draft');
+        return redirect()->route('draft.index2');
 }
 public function delete($id){
     $artikel=DB::table('articles')->where('id', $id)->delete();
-    return redirect()->route('draft');
+    return redirect()->route('draft.index2');
 }
 public function delete2($id){
     $artikel=DB::table('articles')->where('id', $id)->delete();
-    return redirect()->route('publish');
+    return redirect()->route('publish.index');
 }
 }

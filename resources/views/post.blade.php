@@ -46,20 +46,26 @@
                     <p>Kategori:</p>
                 </div> 
                 <div class="border-2 border-solid shadow-xl m-1 border-BlueAccent">
-                    <a class="m-1 text-sm text-BlueAccent" href="">KESEHATAN</a></div>
+                    <a class="m-1 text-sm text-BlueAccent" href="">
+                        @foreach ($category->categories as $kategori)
+                        {{ $kategori->name}}
+                        @endforeach
+                    </a>
+                    </div>
                 </div>
             </div>
             <!-- Komentar section -->
             <div class="container border my-4 border-grey relative">
-            <form>
+            @csrf
+            <form action="{{ url('komentar/'.$detailArtikel->id) }}" method="POST">
                 <div class="m-4">
-                <input type="text" name="" class="h-16 block w-full p-2.5 text-sm focus:ring-slate-700 focus:border-slate-700" placeholder="Beri Komentar..."/></div>
+                <textarea type="text" name="comment_text" class="h-16 block w-full p-2.5 text-sm focus:ring-slate-700 focus:border-slate-700 resize-none" placeholder="Beri Komentar..."></textarea></div>
                 <div class="flex justify-end">
                 <button type="submit" class="border border-white text-white bg-BlueAccent hover:bg-slate-400 hover:border-slate-800 w-20 text-base font-semibold text-center p-1 mr-4 mb-2 shadow-md">Kirim</button></div>
             </form>
             </div>
             <!--Balas membalas komentar section-->
-            <div class="border-b border-grey mt-2 relative">
+            <div class="border-b border-grey mt-2">
                 <div class="flex items-center">
                     <div class="h-5 w-5 my-2 rounded-full  bg-grey  hover:bg-slate-600">
                     <img src="" alt=""></div>
@@ -70,29 +76,12 @@
                     <div class="absolute top-0 right-0 h-5 w-5 m-2 rounded-full bg-grey hover:bg-slate-600 justify-end">
                         <img alt="" src=""></div>
                 </div>
-                <form>
-                <div>
-                <p class="font-normal text-sm text-fontDefault mt-1 ml-7">Lorem ipsum dolor sit!</p>
-                <input type="button" class="border border-white text-white bg-BlueAccent shadow-md hover:bg-slate-400 hover:border-slate-800 w-16 text-sm font-semibold text-center p-1 mr-4 mb-2 mt-1 ml-7" value="Balas"/></div>
-                </form>
-            </div>
-            <div class="border-b border-grey mt-2 relative">
-                <div class="flex items-center">
-                    <div class="h-5 w-5 my-2 rounded-full  bg-grey  hover:bg-slate-600">
-                    <img src="" alt=""></div>
-                    <div class= "font-semibold text-sm mx-2 my-2 hover:text-slate-600 hover:underline text-BlueAccent">
-                    <a href="">Arif Adi</a></div>
-                    <div class="font-normal text-sm ml-2 pl-2 border-l border-grey text-grey">
-                    <p>06 Desember 2024</p></div>
-                    <div class="absolute top-0 right-0 h-5 w-5 m-2 rounded-full bg-grey hover:bg-slate-600 justify-end">
-                        <img alt="" src=""></div>
+                <div class="border-b border-grey mt-2 relative">
+                <p class="font-normal text-sm text-fontDefault mt-1 mb-4 ml-7">{{ $detailArtikel->comments->count() == 0 ? 'Tidak ada komentar' : '' }}</p>
+                @foreach ($detailArtikel->comments as $komentar )
+                <p class="font-normal text-sm text-fontDefault mt-1 mb-4 ml-7">{{ $komentar->comment_text }}</p>
+                @endforeach
                 </div>
-                <form>
-                <div>
-                <p class="font-normal text-sm font-Default mt-1 ml-7">Lorem ipsum dolor sit!</p>
-                <input type="button" class="border border-white text-white bg-BlueAccent shadow-md hover:bg-slate-400 hover:border-slate-800 w-16 text-sm font-semibold text-center p-1 mr-4 mb-2 mt-1 ml-7" value="Balas"/></div>
-                </form>
-            </div>
             <!--end-->
             <!-- Rekomendasi artikel -->
             <div class="absolute right-0 top-0 mt-2">

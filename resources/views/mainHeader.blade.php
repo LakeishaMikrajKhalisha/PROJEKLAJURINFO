@@ -18,10 +18,9 @@
         <!--Nav Search-->
 <div class="mx-40">
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
     <a href="{{ url('/dashboard') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+        <img src="{{ asset('storage\logo.jpeg') }}" class="h-10" alt="Flowbite Logo" />
     </a>
     <!--Pencarian-->
     <div class="flex md:order-2">
@@ -39,7 +38,7 @@
           <span class="sr-only">Search icon</span>
         </div>
         <form action="{{ route('penelusuran.index') }}" method="GET" id="searchForm">
-        <input type="text" id="search-navbar" class="block w-80 mr-4 p-2 ps-10 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Pencarian" name="judulArtikel" value="{{ old('judulArtikel', $judulArtikel) }}" 
+        <input type="text" id="search-navbar" class="block w-80 mr-4 p-2 ps-10 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Pencarian" name="judulArtikel" value="{{ old('judulArtikel') }}" 
                oninput="submitForm()"/>
         </form>
       </div>
