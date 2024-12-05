@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -10,13 +11,13 @@ class post extends Controller
 {
 
     public function show($id){
-        $category = Article::with('categories')->findOrFail($id);
         $judulArtikel = DB::table('articles')->inRandomOrder()->take(5)->get();
-        $detailArtikel = Article::with('comments')->where('id', $id)->first();
+        $detailArtikel = Article::with('categories')->findOrFail($id);
+        $categories = $detailArtikel->categories;
         return view('post',[
             'detailArtikel' => $detailArtikel,
             'judulArtikel' => $judulArtikel,
-            'category' => $category
+            'categories' => $categories
         ]);
     }
 }

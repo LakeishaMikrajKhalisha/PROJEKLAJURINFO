@@ -12,15 +12,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class Article extends Model
 {
     use HasFactory;
-
-    protected $guarded =[
-        'id'
-        ];
-        public function comments(): HasMany{
-            return $this->hasMany(Comment::class);
-        }
-        public function categories(): MorphToMany 
+    protected $fillable = ['judulArtikel', 'isiArtikel'];
+public function categories() 
 {
-    return $this->morphToMany(Category::class, 'categoriable', Categoriable::class);
+    return $this->belongsToMany(Category::class, 'category_article');
 }
 }

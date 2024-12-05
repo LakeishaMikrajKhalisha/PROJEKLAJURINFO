@@ -30,9 +30,13 @@
             <img class="h-44 w-80" src="{{ asset('storage\img.jpg') }}" alt=""/>
             <div class="flex items-center text-sm font-normal border-black">
                 <div class="">
-                    <a href="" class="hover:text-link text-BlueAccent">Kecantikan</a></div>
+                    @foreach ($dataArtikel->categories as $category)
+                    <a href="{{ url('kategori/'.$category->id) }}" class="hover:text-link text-BlueAccent">{{ $category->name }} </a>
+                    @if (!$loop->last), @endif
+                    @endforeach
+                </div>
                 <div class="ml-1 text-black">
-                    <p class="text-grey">| {{($dataArtikel->created_at)}}</p></div>
+                    <p class="text-grey">| {{($dataArtikel->created_at->format('d M Y'))}}</p></div>
             </div>
             <a href="{{ url('artikel/'.$dataArtikel->id)}}" class="hover:underline  hover:text-link hover:underline-offset-1 text-xl font-semibold">
                 {{ $dataArtikel->judulArtikel }}

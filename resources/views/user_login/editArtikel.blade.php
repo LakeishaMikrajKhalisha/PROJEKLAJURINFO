@@ -33,11 +33,12 @@
                     <div onclick="toggleDropdown2()" class="border border-fontDefault text-fontDefault shadow-md hover:bg-slate-400 hover:border-slate-800 w-32 text-sm font-semibold p-1 pl-2 mt-1 cursor-pointer flex items-center">Kategori
                         <img width="10" class="ml-10" src="{{ asset('storage\down_arrow_icon.svg') }}"/>
                     </div>
-                    <select id="dropdown2" class="absolute z-10 mt-1 w-32 origin-top-right bg-white py-1 shadow-lg ring-1 ring-black-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                    <select id="dropdown2" class="absolute z-10 mt-1 w-32 origin-top-right bg-white py-1 shadow-lg ring-1 ring-black-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1" name="category_ids[]">
                       <div class="flex items-center justify-start">
                         <div class="cursor-pointer hover:bg-grey-500 p-2 flex items-center">
                           <option class="block px-4 py-2 text-sm text-fontDefault" role="menuitem" tabindex="-1" id="menu-item-0" name="bisnis">Bisnis</option>
                         </div>
+                      </div>
                       <div class="flex items-center justify-start">
                         <div class="cursor-pointer hover:bg-grey-500 p-2 flex items-center">
                           <option class="block px-4 py-2 text-sm text-fontDefault" role="menuitem" tabindex="-1" id="menu-item-1" name="teknologi" >Teknologi</option>

@@ -8,6 +8,7 @@ use App\Http\Controllers\kategori;
 use App\Http\Controllers\komentar;
 use App\Http\Controllers\dashboard;
 use App\Http\Controllers\userLogin;
+use App\Http\Controllers\imageProfil;
 use App\Http\Controllers\penelusuran;
 use App\Http\Controllers\profilUtama;
 use Illuminate\Support\Facades\Route;
@@ -18,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [dashboard::class, 'index']);
-Route::get('/kategori', [kategori::class, 'index']);
+Route::get('/kategori/{id}', [kategori::class, 'show'])->name('kategori.show');
 Route::get('/penelusuran', [penelusuran::class, 'index'])->name('penelusuran.index');
 Route::get('/daftar-artikel', [artikel::class, 'index']);
 Route::get('/profil-utama', [profilUtama::class, 'index']);

@@ -20,7 +20,7 @@
                 <div class= "font-semibold text-sm my-2 text-BlueAccent hover:text-slate-600 hover:underline">
                 <a href="">Arif Adi</a></div>
                 <div class="font-normal text-sm text-grey m-2 pl-2 border-l border-slate-700">
-                <p>{{ ($detailArtikel->created_at)}}</p></div>
+                <p>{{ ($detailArtikel->created_at->format('d M Y'))}}</p></div>
                 <div class="absolute top-0 right-0 h-5 w-5 m-2 rounded-full  bg-grey hover:bg-slate-600 justify-end">
                 <img alt="" src=""></div>
                 </div>
@@ -44,14 +44,14 @@
                 <div class="flex items-center">
                 <div class="font-semibold text-sm my-1">
                     <p>Kategori:</p>
-                </div> 
+                </div>
+                @foreach ($categories as $category) 
                 <div class="border-2 border-solid shadow-xl m-1 border-BlueAccent">
                     <a class="m-1 text-sm text-BlueAccent" href="">
-                        @foreach ($category->categories as $kategori)
-                        {{ $kategori->name}}
-                        @endforeach
+                        {{ $category->name }}
                     </a>
                     </div>
+                @endforeach
                 </div>
             </div>
             <!-- Komentar section -->
@@ -77,10 +77,8 @@
                         <img alt="" src=""></div>
                 </div>
                 <div class="border-b border-grey mt-2 relative">
-                <p class="font-normal text-sm text-fontDefault mt-1 mb-4 ml-7">{{ $detailArtikel->comments->count() == 0 ? 'Tidak ada komentar' : '' }}</p>
-                @foreach ($detailArtikel->comments as $komentar )
-                <p class="font-normal text-sm text-fontDefault mt-1 mb-4 ml-7">{{ $komentar->comment_text }}</p>
-                @endforeach
+                <p class="font-normal text-sm text-fontDefault mt-1 mb-4 ml-7"></p>
+                <p class="font-normal text-sm text-fontDefault mt-1 mb-4 ml-7"></p>
                 </div>
             <!--end-->
             <!-- Rekomendasi artikel -->

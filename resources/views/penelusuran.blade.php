@@ -11,8 +11,11 @@
                         <img src="{{ asset('storage\img.jpg') }}" class="bg-grey w-48 h-32">
                     <div class="float-right">
                     <div class="flex items-center ml-2 text-sm font-normal text-fontDefault border-fontDefault">
-                        <a href="" class="hover:text-link text-BlueAccent">Kecantikan</a>
-                        <p class="ml-1 text-grey">| {{ ($judul->created_at)}}</p>
+                        @foreach ($judul->categories as $category)
+                        <a href="{{ url('kategori/'.$category->id) }}" class="hover:text-link text-BlueAccent">{{ $category->name }}</a>
+                        @if (!$loop->last), @endif
+                        @endforeach
+                        <p class="ml-1 text-grey">| {{ ($judul->created_at->format('d M Y'))}}</p>
                     </div>
                     <div class="ml-2" id="results">
                     <a href="{{ url('artikel/'.$judul->id)}}" class="hover:underline  hover:text-link hover:underline-offset-1 text-xl font-semibold"> {{ $judul->judulArtikel }}</a>

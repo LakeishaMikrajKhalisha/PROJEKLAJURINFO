@@ -60,7 +60,7 @@
               <div class="flex items-center justify-start">
                 <div class="cursor-pointer hover:bg-grey-500 p-2 flex items-center">
                   <img width="10" class="h-5 w-auto mr-1" src="{{ asset('storage\userIcon.svg') }}"/>
-                    <a href="">Lihat profil</a></div>
+                    <a href="{{ url('profil-utama/login') }}">Lihat profil</a></div>
                 </div>
               <div class="flex items-center justify-start">
                 <div class="cursor-pointer hover:bg-grey-500 p-2 flex items-center">
@@ -76,24 +76,14 @@
         <!--nav kategori-->
         <div class="bg-BlueAccent text-white h-10">
         <nav class="navigation mx-40 flex justify-between items-center text-base font-medium">
+          @php
+          $categories = App\Models\Category::all(); // Fetch all categories
+          @endphp
+          @foreach ($categories as $kategori)
             <div class="flex items-center justify-center">
-            <a href="#" class="my-2 border-0 hover:bg-gray-50 hover:bg-opacity-20 w-20 text-center">Bisnis</a>
+            <a href="{{ url('kategori/'.$kategori->id) }}" class="my-2 border-0 hover:bg-gray-50 hover:bg-opacity-20 w-24 text-center">{{ $kategori->name }}</a>
             </div>
-            <div class="flex items-center justify-center">
-            <a href="#" class="my-2 border-0 hover:bg-gray-50 hover:bg-opacity-20 w-20 text-center">Teknologi</a>
-            </div>
-            <div class="flex items-center justify-center">
-            <a href="#" class="my-2 border-0 hover:bg-gray-50 hover:bg-opacity-20 w-20 text-center">Olahraga</a>
-            </div>
-            <div class="flex items-center justify-center">
-            <a href="#" class="my-2 border-0 hover:bg-gray-50 hover:bg-opacity-20 w-20 text-center">Kecantikan</a>
-            </div>
-            <div class="flex items-center justify-center">
-            <a href="#" class="my-2 border-0 hover:bg-gray-50 hover:bg-opacity-20 w-20 text-center">Kesehatan</a>
-            </div>
-            <div class="flex items-center justify-center">
-            <a href="#" class="my-2 border-0 hover:bg-gray-50 hover:bg-opacity-20 w-20 text-center">Lifestyle</a>
-            </div>
+          @endforeach
         </nav>
       </div>
 </header>
